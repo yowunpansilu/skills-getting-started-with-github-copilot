@@ -159,15 +159,40 @@ footer {
 }
 
 .participants-list {
-  margin-left: 18px;
+  margin-left: 0;
   margin-bottom: 0;
   color: #333;
   font-size: 15px;
+  padding-left: 0;
 }
 
-.participants-list li {
+.participants-list.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participant-item {
   margin-bottom: 2px;
-  list-style-type: disc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant {
+  color: #c62828;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: #fbe9e7;
+  border: 1px solid #ef9a9a;
+}
+.delete-participant:hover {
+  color: #fff;
+  background: #c62828;
+  border-color: #c62828;
 }
 
 .no-participants {
